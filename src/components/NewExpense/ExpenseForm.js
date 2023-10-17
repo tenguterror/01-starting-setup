@@ -33,6 +33,7 @@ const ExpenseForm = (props) => {
     setEnteredTitle('');
     setEnteredAmount('');
     setEnteredDate('');
+    setFormShow(false);
   };
 
   const newExpenseHandler = () => {
@@ -40,6 +41,9 @@ const ExpenseForm = (props) => {
   };
 
   const cancelHandler = () => {
+    setEnteredTitle('');
+    setEnteredAmount('');
+    setEnteredDate('');
     setFormShow(false);
   };
 
